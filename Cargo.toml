@@ -4,6 +4,8 @@ members = [
     "crates/chain",
     "crates/core",
     "crates/file_store",
+    "crates/bdk_redb",
+    "crates/bdk_persistence",
     "crates/electrum",
     "crates/esplora",
     "crates/bitcoind_rpc",
@@ -12,6 +14,7 @@ members = [
     "examples/example_electrum",
     "examples/example_esplora",
     "examples/example_bitcoind_rpc_polling",
+    "examples/example_wallet_redb",
 ]
 
 [workspace.package]

@@ -1,0 +1,20 @@
+[package]
+name = "bdk_redb"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "A redb-based persistence implementation for BDK"
+repository = "https://github.com/bitcoindevkit/bdk"
+
+[dependencies]
+bdk_chain = { path = "../chain", version = "0.21.1", features = ["miniscript", "serde"] }
+bdk_persistence = { path = "../bdk_persistence", version = "0.1.0" }
+redb = "1.0.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+
+[dev-dependencies]
+tempfile = "3.8"
+tokio = { version = "1", features = ["rt", "macros"] }
+bitcoin = { version = "0.30.0" }
